@@ -1,0 +1,39 @@
+Callback Function:
+Node.js callbacks are a special type of function passed as an argument to another function.
+They're called when the function that contains the callback as an argument completes its execution, and allows the code in the callback to run in the meantime.
+Callbacks help us make asynchronous calls. 
+
+Syntax: function function_name(argument, callback)
+
+Benefit:
+The benefit of using a callback function is that you can wait for the result of a previous function call and then execute another function call.
+
+
+you can also pass a function as an argument to a function. This function that is passed as an argument inside of another function is called a callback function. For example,
+
+// function
+function greet(name, callback) {
+    console.log('Hi' + ' ' + name);
+    callback();
+}
+
+// callback function
+function callMe() {
+    console.log('I am callback function');
+}
+
+// passing function as an argument
+greet('Peter', callMe);
+
+Express:
+Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications. It is designed to make the process of building web applications and APIs more straightforward. Express simplifies the creation of server-side logic and routing, making it widely used for developing web applications.
+
+Body-parser:
+body-parser is a middleware for Express.js that extracts the entire body portion of an incoming request stream and exposes it on req.body. It parses incoming request bodies in a middleware before your handlers, simplifying the process of handling form data, JSON, and other types of requests.
+
+
+
+https://github.com/MuthamilSudar/node
+
+
+
