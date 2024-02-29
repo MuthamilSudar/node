@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    <form action="http://localhost:3000/calculate" method="post">
+        <label for="num1">Number 1:</label>
+        <input type="number" name="num1" required><br>
+
+        <label for="num2">Number 2:</label>
+        <input type="number" name="num2" required><br>
+
+        <label for="operator">Select Operation:</label>
+        <select name="operator" required>
+            <option value="add">Addition</option>
+            <option value="subtract">Subtraction</option>
+            <option value="multiply">Multiplication</option>
+            <option value="divide">Division</option>
+        </select><br>
+
+        <input type="submit" value="Calculate">
+    </form>
+</body>
+</html>
