@@ -1,0 +1,13 @@
+Event Bubbling: (default)
+
+In the event bubbling phase, the event starts from the target element that triggered the event and bubbles up through its ancestors in the DOM hierarchy.
+The most specific ancestor (closest to the target) receives the event first, followed by its parent, and so on, until it reaches the document root.
+
+element.addEventListener('eventType', handlerFunction, false);
+
+
+Event Capturing:
+In the event capturing phase (also known as trickling), the event travels from the document root down to the target element.
+The event is captured by the outermost ancestor first and then moves towards the target element.
+
+element.addEventListener('eventType', handlerFunction, true);

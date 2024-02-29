@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <button onclick="startDisplay()">Start</button>
+  <button onclick="stopDisplay()">Stop</button>
+
+  <div id="helloMessage"></div>
+
+  <script>
+    let intervalId; 
+    const x = document.getElementById('helloMessage');
+
+    function displayHello() {
+ 
+      x.textContent += "Hello!";
+    }
+
+    function startDisplay() 
+    {
+     
+      intervalId = setInterval(displayHello, 1000);
+    }
+
+    function stopDisplay() {
+      
+      clearInterval(intervalId);
+      
+      helloMessageElement.textContent = '';
+    }
+  </script>
+
+</body>
+</html>
+
+
+Detecting DDoS Attacks in Software-Defined Networking (SDN) through Butterfly Optimization and Ensemble Machine Learning Algorithms
+

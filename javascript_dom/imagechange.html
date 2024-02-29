@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<img id="myImage" src="image1.jfif" alt="Original Image" height="25%" width="25%">
+
+<button onclick="changeImage()">Change Image</button>
+
+<script>
+function changeImage() {
+    
+    var image = document.getElementById("myImage");
+    if(image.src.endsWith("image1.jfif"))
+{
+    image.src = "image2.jfif";
+}
+else
+{
+	image.src = "image1.jfif";
+}
+
+
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+-->

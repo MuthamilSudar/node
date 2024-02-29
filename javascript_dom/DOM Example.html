@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<h1 id="h">My First CSS Example</h1>
+<p id="pp">This is a paragraph.</p>
+<input type="text" id="t1">
+<button id="b1" onclick="fun()">Click</button>
+<p>hai <span id="s"></span></p>
+
+<script>
+function fun()
+{
+document.getElementById("h").innerHTML="HELLO";
+document.getElementById("pp").style.fontSize="50px";
+document.getElementById("pp").style.color="red";
+document.getElementById("s").innerHTML=document.getElementById("t1").value;
+}
+</script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Insert Before Example</title>
+</head>
+<body>
+
+  <h1>Insert Before Example</h1>
+
+  <ul id="list">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+
+  <button onclick="insert()">Insert Before Item 2</button>
+
+  <script>
+    function insert() {
+      // Get the list element by its ID
+      const list = document.getElementById('list');
+
+      // Create a new list item
+      const newItem = document.createElement('li');
+      const x=newItem.textContent = 'New Item';
+
+
+      // Get the second child element directly
+      const existingItem = list.children[1];
+      console.log(existingItem);
+
+      // Insert the new item before the second child
+      list.insertBefore(newItem, existingItem);
+      
+
+    }
+  </script>
+</body>
+</html>

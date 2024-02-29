@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p id="demo">This is a paragraph.</p>
+<button id="start">Increase</button>
+<button id="end">Decrease</button>
+
+<script>
+
+document.getElementById("start").addEventListener("click",f1)
+document.getElementById("end").addEventListener("click",f2)
+function f1()
+{
+let x = parseInt(getComputedStyle(document.getElementById("demo")).fontSize);
+
+document.getElementById("demo").style.fontSize=(x+30)+"px";
+}
+function f2()
+{
+let x= parseInt(getComputedStyle(document.getElementById("demo")).fontSize);
+
+document.getElementById("demo").style.fontSize=(x-30)+"px";
+}
+</script>
+
+</body>
+</html>

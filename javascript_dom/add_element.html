@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body id="b1">
+<div id="div1">
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+</div>
+<ol id="list1">
+<li>raj</li>
+<li>kumar</li>
+</ol>
+<script>
+var para= document.createElement("p");
+
+var node = document.createTextNode("This is new.");
+para.appendChild(node);
+var element = document.getElementById("div1");
+element.appendChild(para);
+document.getElementById("b1").appendChild(document.createElement("h1").appendChild(document.createTextNode("My New Heading")));
+
+var lelement=document.createElement("li");
+var lcontent=document.createTextNode("TAMIL");
+lelement.appendChild(lcontent);
+document.getElementById("list1").appendChild(lelement);
+
+
+var anchor = document.createElement("a");
+anchor.href = "https://www.example.com";
+var textNode = document.createTextNode("Visit Example.com");
+anchor.appendChild(textNode);
+document.body.appendChild(anchor);
+
+</script>
+</body>
+</html>

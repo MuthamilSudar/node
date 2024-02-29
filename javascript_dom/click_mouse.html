@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html >
+
+<body>
+    <h2>Click the Button</h2>
+    <button onclick="func1()" >Click Me</button>
+    <button ondblclick="func2()">Double Click</button><br>
+    <p id="demo" onmouseover="func3()" onmouseout="func4()">HAI</p>
+
+    <script>
+        function func1() {
+            alert("Button Clicked!");
+        }
+        function func2() {
+            alert("Button Double Clicked!");
+        }
+        function func3(){
+        	document.getElementById("demo").style.backgroundColor="red";
+            }
+            function func4(){
+        	document.getElementById("demo").style.backgroundColor="white";
+            }
+    </script>
+</body>
+</html>

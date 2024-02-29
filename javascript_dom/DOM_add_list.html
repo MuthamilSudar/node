@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Country List</title>
+ 
+</head>
+<body>
+
+  <h1>Country List</h1>
+
+  <ul id="countryList">
+    <li>United States</li>
+    <li>Canada</li>
+    <li>United Kingdom</li>
+    <!-- Add more countries as needed -->
+  </ul>
+
+  <p id="paragraph">This is a paragraph about the web page.</p>
+
+  <button onclick="addCountry()">Add</button>
+  <button onclick="modifyParagraph()">Modify</button>
+
+  <script>
+    function addCountry() {
+      const countryList = document.getElementById('countryList');
+      const newCountry = prompt('Enter a new country:');
+      
+      if (newCountry) {
+        const listItem = document.createElement('li');
+        listItem.textContent = newCountry;
+        countryList.appendChild(listItem);
+      }
+    }
+
+    function modifyParagraph() {
+      const paragraph = document.getElementById('paragraph');
+      const newContent = prompt('Enter new content for the paragraph:');
+      
+      if (newContent) {
+        paragraph.innerHTML = newContent;
+      }
+    }
+  </script>
+</body>
+</html>

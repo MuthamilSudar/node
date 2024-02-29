@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Color Toggle</title>
+ 
+</head>
+<body>
+  <button id="startBtn" onclick="startToggle()">Start</button>
+  <button id="stopBtn" onclick="stopToggle()">Stop</button>
+  <div id="text">Color Toggle</div>
+
+  <script>
+    let intervalId;
+
+    function startToggle() {
+      intervalId = setInterval(toggleColor, 1000);
+    }
+
+    function stopToggle() {
+      clearInterval(intervalId);
+    }
+
+    function toggleColor() {
+      const textElement = document.getElementById('text');
+      const currentColor = textElement.style.color;
+
+      if (currentColor === 'red') {
+        textElement.style.color = 'blue';
+      } else {
+        textElement.style.color = 'red';
+      }
+    }
+  </script>
+</body>
+</html>
